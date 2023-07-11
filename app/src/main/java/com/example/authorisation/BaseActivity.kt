@@ -2,16 +2,16 @@ package com.example.authorisation
 
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
-import com.example.authorisation.databinding.ActivityBaseBinding
+import com.example.authorisation.databinding.ContentBaseBinding
 
 class BaseActivity : AppCompatActivity() {
 
-    private lateinit var binding: ActivityBaseBinding
+    private lateinit var binding: ContentBaseBinding
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
 
-        binding = ActivityBaseBinding.inflate(layoutInflater)
+        binding = ContentBaseBinding.inflate(layoutInflater)
         setContentView(binding.root)
     }
 
